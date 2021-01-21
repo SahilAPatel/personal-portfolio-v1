@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Projects</title>
+
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+        
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.href='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+
+        
+        <div id="projectstabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            <h2>PROJECTS</h2>
+            <p><span id="projectp">
+                This website in itself is a project of mine! Currently it is simple HTML pages but in the future, 
+                I am going to introduce CSS/Js in the form of the MERN stack!
+            </span></p>
+            <hr>
+
+            <div class="project row">
+                <div class="column">
+                    <img src="images/chess.gif" alt="Chess Game" width="200" length="200">
+                </div>
+                <div class="column">
+                    <h3>Chess AI</h3>
+                    <p>Python | Jupyter | Tensorflow</p>
+                    <ul>
+                        <li>Collaboration project with my friends Luka Grujicic and Noah Fijan</li>
+                        <li>Used py-chess library to represent board</li>
+                        <li>Developed a board evaluation function</li>
+                        <li>Implemented Monte Carlo Tree Search to find optimal moves</li>
+                        <li>Currently implementing a Convolutional Neural Network</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="project row">
+                <div class="column">
+                    <img src="images/pacemaker.png" alt="Chess Game" width="200" length="200">
+                </div>
+                <div class="column">
+                    <h3>Pacemaker - Front End</h3>
+                    <p>Python | Tkinter</p>
+                    <ul>
+                        <li>Used Tkinter to develop front end</li>
+                        <li>Front end is a DCM for the Pacemaker</li>
+                        <li>Developed settings page that itnerfaces with Arduino</li>
+                        <li>Implemented a Login feature with encryption</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="project row">
+                <div class="column">
+                    <img src="images/pulsemonitor.png" alt="Chess Game" width="200" length="200">
+                </div>
+                <div class="column">
+                    <h3>Heart Pulse Monitor</h3>
+                    <p>C/C++ | MATBLAB | Esduino</p>
+                    <ul>
+                        <li>Setup Esduino with a finger pulse transducer to get reading of pulse in voltage</li>
+                        <li>Utilized on board ADC to turn signal into digital stream</li>
+                        <li>Calcualted BPM off the digital stream and graphed the pulse on Matlab</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="project row">
+                <div class="column">
+                    <img src="images/dq5.png" alt="Chess Game" width="200" length="300">
+                </div>
+                <div class="column">
+                    <h3>Image Decompression on FPGA</h3>
+                    <p>Verilog | Altera FPGA | HDL | Modelsim</p>
+                    <ul>
+                        <li>Implemented decompression algorithm created by proffessor on an Altera FPGA</li>
+                        <li>System utiuzlied UART and on board SRAM to effeciently store and caculate on data</li>
+                        <li>Debugged using modelsim by observing waveforms and data sheets</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+    </body>
+</html>

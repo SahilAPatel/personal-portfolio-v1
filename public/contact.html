@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" href="styles/tingle.css">
+        <script src="scripts/tingle.js"></script>
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Contact</title>
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+        
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.href='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+
+
+
+        <div id="contacttabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            <h2>CONTACT ME</h2>
+            <div class="contactme">
+                <div class="row">
+                    <div id="socials">
+                        <a class="twitter-timeline" href="https://twitter.com/pahilsatel?ref_src=twsrc%5Etfw">Tweets by pahilsatel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+
+                    <div class="column">
+                        <div class="contact-form">
+                            <form name="myForm" method="POST" action="/contact" onsubmit="validateForm()">
+                                <label for="name" class="contact-entry-label">Name:</label><br>
+                                <input type="text" id="name" name="name" class="contact-entry"><br>
+    
+                                <label for="email" class="contact-entry-label">E-mail:</label><br>
+                                <input type="text" id="email" name="email" class="contact-entry"><br>
+    
+                                <label for="subject" class="contact-entry-label">Message:</label><br>
+                                <textarea name="subject" style="height:150px" class="contact-entry"></textarea><br>
+    
+                                <input type="submit" value="Submit" id="contact-button">
+                            </form>
+                        </div>
+
+                        <div class="center-items">
+                            <h3>Connect with me on LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/patel-s/">
+                                <img id="linkedin-image" src="images/linkedin.png" alt="LinkedIn" width="300" height="300">
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+    </body>
+</html>

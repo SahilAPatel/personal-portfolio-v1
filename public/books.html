@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Books</title>
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+        
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.href='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+
+        <div id="bookstabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            <h2>BOOKS</h2>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Status</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Man's Search for Meaning</td>
+                        <td>Viktor Frankl</td>
+                        <td>complete</td>
+                        <td>Frankl chronicling his experiences as a prisoner in Nazi concentration camps during World War II, and describing his psycological method of finding meaning in his existance. He also covers the behaviour of the other prisinors that had given up and the timeless criterion he observed. Highly reccomend.</td>
+                    </tr>
+                    <tr>
+                        <td>The War on Art</td>
+                        <td>Steven Pressfield</td>
+                        <td>complete</td>
+                        <td>Pressfield goes over the common enemy of anyone partaking on a artistic endavor, resistance. He goes over the variors forms resistance takes on and how to beat them. Short but very inspiring book, highly reccomend.</td>
+                    </tr>
+                    <tr>
+                        <td>The Four</td>
+                        <td>Scott Galloway</td>
+                        <td>complete</td>
+                        <td>This book goes over the four major powerhouses in the tech industry and how they came to be. Galloway goes over what in each of the companies DNAs makes them so profitable and strong. As a entreperneru and professor, he has amazing insight on the industry and also delviers it in a digestable manner. Reccomend if you are itnerested in FANG companies.</td>
+                    </tr>
+                    <tr>
+                        <td>12 Rules for Life</td>
+                        <td>Jordan Peterson</td>
+                        <td>complete</td>
+                        <td>Very great book to get into psycology as the rules provide great surface level material, while also going in depth for when you read the book again. Everytime you read this book you are sure to find new meanings to Jordan's rules making this book timelsess. Highly reccomend.</td>
+                    </tr>
+                    <tr>
+                        <td>Thinking, Fast and Slow</td>
+                        <td>Daniel Kahneman</td>
+                        <td>on pause</td>
+                        <td>Book summarizes resarch of Kahneman, on how the mind thinks in two different ways (fast, and slow). Book is very difficult, so I will get back to it at another time, but I have heard great things.</td>
+                    </tr>
+                    <tr>
+                        <td>The Magic of Thinking Big</td>
+                        <td>David Schwartz</td>
+                        <td>stopped reading</td>
+                        <td>Most people don't think big, and that is the first step to failure. The first step to doing something is beliving you can do it, weather it be getting an amazing job, landing the girl of your dreams or beating your best mile record. The premise of the book is great but I feel like the delivery of contrent is not for me. Book goes over various thinking exercises by placing you in real world examples that I cannot realte to, hence I stopped reading.</td>
+                    </tr>
+                    <tr>
+                        <td>The Alchemist</td>
+                        <td>Paulo Coelho</td>
+                        <td>not started</td>
+                        <td>My friends who have read this book all agree its a must read.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+    </body>
+</html>

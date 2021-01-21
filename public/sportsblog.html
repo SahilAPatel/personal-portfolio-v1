@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Sports Blog</title>
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+
+        <script src="scripts/quote.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+        
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.href='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+
+        <div id="sportsblogtabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            <h2>SPORTS BLOG</h2>
+
+            <div class="blog-post">
+                <div class="blog-header" >
+                    <h3>Quote of the day</h3>
+                </div> 
+
+                <div class="blog-plot">
+                    <h4 id="quote"> </h4>
+                </div>
+
+                <div class="blog-plot">
+                    <p id="author"></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="blog-post">
+                <div class="blog-header">
+                    <h3>The new Big 3 of Tennis</h3>
+                    <h4>08/29/2020</h4>
+                </div>
+                
+                <div class="blog-image row">
+                    <img src="images/tennis1.jpg" alt="tennis" width="33%">
+                    <img src="images/tennis1.jpg" alt="tennis" width="33%">
+                    <img src="images/tennis1.jpg" alt="tennis" width="33%">
+                </div>
+    
+                <div class="blog-plot">
+                    <p>
+                        Comming Soon!
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <div class="blog-header">
+                    <h3>Missing Volleyball</h3>
+                    <h4>04/07/2020</h4>
+                </div>
+                
+                <div class="blog-image">
+                </div>
+    
+                <div class="blog-plot">
+                    <p><span id="blog1">
+                        About a year ago I started playing volleyball because two of my friends at my coop were on the Company league's team and they needed a subsitute. Before I knew it I was subbing in almost every week and eventually I got
+                        really into volleyball! I have always played basketball so I was not a stranger to being on the court and understanding positions, but it was very itneresting seeing how different the sport plays. At first glance you'd think
+                        oh you just set the ball and spike it, but in reality a lot of fundamnetals as well as timing go into making a good play. There is also blocking, quick attacks, faking blockers and so much more! So as Corona hit and everyone
+                        became home bound, I have really been itching to play some volleyball. One of the cool ways I am relieving this urge is by watching videos on moomoocowjonny's <a href="https://www.youtube.com/user/moomoocowjonny/featured">YouTube channel</a>, particularly the UCSB Men's Volleyball 
+                        GoPro series! The videos are essentially a first person POV of a UCBS professional volleyball player and you get to see how insane these players are!
+                    </span></p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+    </body>
+</html>

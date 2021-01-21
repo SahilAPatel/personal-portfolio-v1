@@ -1,0 +1,524 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    background-color: rgb(255, 226, 206);
+}
+
+#tabtitle {
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+    letter-spacing: 0.5px; 
+}
+
+.center-text {
+    text-align: center;
+}
+
+.titleDiv {
+    margin-left: 3.3%;
+    width: 97%;
+}
+
+#darkModeIcon:hover {
+    opacity: 0.7;
+}
+
+/* ============================================================================================== */
+
+h1 { 
+    color: rgb(37, 37, 37);
+    background-color: rgb(255, 226, 206);
+    font-family: "Lucida Console", Courier, monospace;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 100px; 
+    letter-spacing: -6px; 
+    line-height: 1;
+    text-align: center; 
+}
+
+h2 {
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center; 
+    font-size: 40px; 
+    color: rgb(255, 255, 255);
+    padding: 50px 0px 0px;
+    letter-spacing: 1px; 
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    padding: 0px 25px 0px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);  
+    padding: 0px 25px 0px;
+}
+
+h5 {
+    color: rgb(255, 255, 255);  
+    padding: 0px 25px 0px;
+}
+
+p { 
+    color: #ffffff; font-family: Arial;
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+    font-size: 17px; 
+    padding: 0px 25px 0px;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#hidden-link {
+    text-decoration: none;
+}
+
+#hidden-link:visited {
+    text-decoration: underline;
+}
+
+
+li {
+    color: #ffffff; font-family: Arial;
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+}
+
+hr {
+    width: 97%;
+}
+
+.titleDiv {
+    margin-left: 3.3%;
+    width: 97%;
+}
+
+.right {
+    float: right;
+}
+
+.darkModeIcon:hover {
+    opacity: 0.7;
+}
+
+/* ============================================================================================== */
+
+#maintab {
+    background-color: rgb(255, 64, 64);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#maintab:hover {
+    background-color: rgb(247, 90, 90);
+}
+
+#maintabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(255, 64, 64);
+}
+
+#main-image {
+    background-color: rgb(211, 56, 56);
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.intro-p {
+    background-color: rgb(211, 56, 56);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* ============================================================================================== */
+
+#projectstab {
+    background-color: rgb(74, 170, 74);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#projectstab:hover {
+    background-color: rgb(83, 190, 83);
+}
+
+#projectstabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(74, 170, 74);
+}
+
+.project {
+    background-color: rgb(36, 136, 36);
+    margin: 0px 20px 0px;
+    padding: 10px 10px 10px;
+}
+
+/* ============================================================================================== */
+
+#podcaststab {
+    background-color: rgb(78, 78, 255);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#podcaststab:hover {
+    background-color: rgb(85, 85, 255);
+}
+
+#podcaststabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(78, 78, 255);
+    align-items: center;
+}
+
+.podcast-table {
+    padding: 0px 25px 0px;
+}
+
+.podcast-table thead th {
+    background-color: #424242;
+    border: solid 2px #ffffff00;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.podcast-table tbody td {
+    border: solid 2px #ffffff00;
+    background-color: rgb(85, 85, 161);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px;
+    text-align: center;
+}
+
+/* ============================================================================================== */
+
+#bookstab {
+    background-color: rgb(255, 184, 51);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#bookstab:hover {
+    background-color: rgb(255, 189, 67);
+}
+
+#bookstabcontent{
+    margin-top: 48px;
+
+padding: 0px 0px 100%;    background-color: rgb(255, 184, 51);
+}
+
+.book-table {
+    padding: 0px 25px 0px;
+}
+
+.book-table thead th {
+    background-color: #424242;
+    border: solid 2px #ffffff00;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.book-table tbody td {
+    border: solid 2px #ffffff00;
+    background-color: rgb(195, 154, 87);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px;
+}
+
+/* ============================================================================================== */
+
+#musictab {
+    background-color: rgb(255, 117, 140);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#musictab:hover {
+    background-color: rgb(255, 145, 163);
+}
+
+#musictabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(255, 117, 140);
+}
+
+.music {
+    background-color: rgb(224, 100, 121);
+    margin: 0px 20px 0px;
+    padding: 10px 10px 10px;
+}
+
+/* ============================================================================================== */
+
+#sportstab {
+    background-color: rgb(4, 190, 144);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#sportstab:hover {
+    background-color: rgb(12, 204, 156);
+}
+
+#sportsblogtabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(4, 190, 144);
+}
+
+.blog-post {
+    background-color: rgb(66, 156, 132);
+    margin: auto;
+    width: 900px;
+    padding: 10px 10px 10px;
+}
+
+.blog-header {
+    background-color: rgb(12, 204, 156);
+    padding: 5px 5px 5px;
+}
+
+.blog-image {
+    background-color: rgb(12, 204, 156);
+    padding: 5px;
+}
+
+.blog-plot {
+    background-color: rgb(12, 204, 156);
+    padding: 5px 5px 5px;
+}
+
+/* ============================================================================================== */
+
+#lookbooktab {
+    background-color: rgb(179, 95, 212);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#lookbooktab:hover {
+    background-color: rgb(197, 139, 219);
+}
+
+#lookbooktabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(179, 95, 212);
+}
+
+.look-img {
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+}
+
+.look-img:hover {
+    opacity: 0.8;
+}
+
+.img-preview {
+    padding-left: 200px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#expandedImg {
+    padding: 15px;
+    width: 50%;
+    background-color: rgb(197, 139, 219);
+}
+
+#imgtext {
+    color: #ffffff; font-family: Arial;
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+    font-size: 17px; 
+}
+
+/* ============================================================================================== */
+
+#contacttab {
+    background-color: rgb(112, 112, 112);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+#contacttab:hover {
+    background-color: rgb(136, 136, 136);
+}
+
+#contacttabcontent {
+    margin-top: 48px;
+    padding: 0px 0px 100%;
+    background-color: rgb(112, 112, 112);
+}
+
+#socials {
+    width: 500px;
+    align-items: center;
+    padding: 0px 10px 0px 25%;
+}
+
+.center-items {
+    padding-left: 50px;
+    align-content: center;
+}
+
+.contact-form {
+    background-color: rgb(93, 93, 93);
+    padding: 10px 20px 10px;
+    width: 400px;
+}
+
+.contact-entry-label {
+    color: #ffffff; font-family: Arial;
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+    font-size: 17px; 
+}
+
+.contact-entry {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 6px 0px;
+    box-sizing: border-box;
+    font-size: 14px; 
+    font-family: "Helvetica Neue",Arial,sans-serif; 
+}
+
+#contact-button {
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+}
+
+#contact-button:hover {
+    background-color: #494949;
+}
+
+/* ============================================================================================== */
+
+
+
+.row {
+    display: flex;
+}
+
+
+img[data-action="zoom"] {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+  }
+  .zoom-img,
+  .zoom-img-wrap {
+    position: relative;
+    z-index: 666;
+    -webkit-transition: all 300ms;
+         -o-transition: all 300ms;
+            transition: all 300ms;
+  }
+  img.zoom-img {
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+    cursor: -moz-zoom-out;
+  }
+  .zoom-overlay {
+    z-index: 420;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    filter: "alpha(opacity=0)";
+    opacity: 0;
+    -webkit-transition:      opacity 300ms;
+         -o-transition:      opacity 300ms;
+            transition:      opacity 300ms;
+  }
+  .zoom-overlay-open .zoom-overlay {
+    filter: "alpha(opacity=100)";
+    opacity: 1;
+  }
+  .zoom-overlay-open,
+  .zoom-overlay-transitioning {
+    cursor: default;
+  }
+  

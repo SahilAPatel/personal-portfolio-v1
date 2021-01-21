@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Music</title>
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+        
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.href='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+
+        <div id="musictabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            <h2>MUSIC</h2>
+            <p><span id="musicp">
+                I love music, who dosent?! To share my favourite songs of the month I made this page for all my monthly playlists. Most of my music taste
+                revolves around Hip Hop and RnB, however I am not afraid to explore other genras. So if you think you have some suggestions for me, go 
+                to the contact page and let me know! Also feel free to follow my Spotify account
+                <a href="https://open.spotify.com/user/pahil6satel?si=KBb101ffT2-LECY6R2n9kQ">here</a>.
+            </span></p>
+            <hr>
+
+
+            <div class="row">
+                <div class="music">
+                    <iframe src="https://open.spotify.com/embed/playlist/38yNJqs9K0ePlW6t36SaQX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="music">
+                    <iframe src="https://open.spotify.com/embed/playlist/50OhzeEgi7c0PvojxNWUKC" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="music">
+                    <iframe src="https://open.spotify.com/embed/playlist/6NxpPFTqkIg5Z4HZSVVb5S" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            
+        </div>
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+    </body>
+</html>

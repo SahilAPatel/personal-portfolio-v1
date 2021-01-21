@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Podcasts</title>
+        
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+        
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.href='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+
+        <div id="podcaststabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            <h2>PODCASTS</h2>
+
+            <table class="podcast-table">
+                <col style="width:15%">
+                <col style="width:25%">
+                <col style="width:25%">
+                <col style="width:5%">
+                <col style="width:30%">
+
+                <thead>
+                    <tr>
+                        <th>Podcast</th>
+                        <th>Summary</th>
+                        <th>My Thoughts</th>
+                        <th>Link</th>
+                        <th>Listen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JRE #1109 - Matthew Walker</td>
+                        <td>Matthew Walker is Professor of Neuroscience and Psychology at the University of California, Berkeley, and Founder and Director of the Center for Human Sleep Science. Check out his book "Why We Sleep: Unlocking the Power of Sleep and Dreams" on Amazon. </td>
+                        <td>This podcast played a huge role in making me prioritze sleeping, not just longer but also better. Matthew is a very knowledgble indivudal that provided nothing but facts when backing up his points. Highly reccomend listening to this podcast as you may be 'sleep blind'.</td>
+                        <td><a href="https://www.youtube.com/watch?v=pwaWilO_Pig">link</a></td>
+                        <td><iframe src="https://open.spotify.com/embed-podcast/episode/1WtITGcwwZYQZHVJGciMJp" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>JRE #1309 - Naval Ravikant</td>
+                        <td>Naval Ravikant is an entrepreneur and angel investor, a co-author of Venture Hacks, and a co-maintainer of AngelList.</td>
+                        <td>Naval has some very fresh and interesting points on how you should live life. Weather it be chasing weath, happiness or knowledge. He is a living representation of his own ideals. He also provides some great insight on politics and how it effects the valley.</td>
+                        <td><a href="https://www.youtube.com/watch?v=3qHkcs3kG44">link</a></td>
+                        <td><iframe src="https://open.spotify.com/embed-podcast/episode/3ijkVfaht5kcFPvHcCbYYD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>JRE #1108 - Peter Attia</td>
+                        <td>Peter Attia is the founder of Attia Medical, PC, a medical practice with offices in San Diego and New York City, focusing on the applied science of longevity.</td>
+                        <td>If you are interested in a well spoken, brave adventurer that also happens to be a doctor and speaker, then look no further. Dr. Attia shares some amazing information on longevity science, fasting, and some amazing feats that he has achieved himself.</td>
+                        <td><a href="https://www.youtube.com/watch?v=gP1NA5f4LfE">link</a></td>
+                        <td><iframe src="https://open.spotify.com/embed-podcast/episode/1rVmRJzW9wqnZrYDJlRu42" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="scripts/set_style.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <script src="scripts/script.js"></script>
+        <title>Sahil Patel - Main</title>
+
+        <!-- animsition.css -->
+        <link rel="stylesheet" href="styles/animsition.min.css">
+        <!-- jQuery -->
+        <script src="scripts/jquery.js"></script>
+        <!-- animsition.js -->
+        <script src="scripts/animsition.min.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="row">
+            <div class="titleDiv">
+                <h1>Sahil Patel</h1>
+            </div>
+            <img id="darkModeIcon" src="images/darkmode.png" alt="Dark Mode Icon" width="70" height="70" onclick="toggleDarkMode();">
+        </div>
+         
+        <div id="tabbar">
+            <button id="maintab" onclick="location.href='index.html'" class="animsition-link"><span id="tabtitle">Main</span></button>
+            <button id="projectstab" onclick="location.href='projects.html'" class="animsition-link"><span id="tabtitle">Projects</span></button>
+            <button id="podcaststab" onclick="location.hresf='podcasts.html'"><span id="tabtitle">Podcasts</span></button>
+            <button id="bookstab" onclick="location.href='books.html'" ><span id="tabtitle">Books</span></button>
+            <button id="musictab" onclick="location.href='music.html'" ><span id="tabtitle">Music</span></button>
+            <button id="sportstab" onclick="location.href='sportsblog.html'" ><span id="tabtitle">Sports Blog</span></button>
+            <button id="lookbooktab" onclick="location.href='lookbook.html'" ><span id="tabtitle">Look Book</span></button>
+            <button id="contacttab" onclick="location.href='contact.html'" ><span id="tabtitle">Contact</span></button>
+        </div>
+        
+        <div id="maintabcontent" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="500" data-animsition-out-class="fade-out" data-animsition-out-duration="500">
+            
+            <h2>MAIN</h2>
+
+            <img id="main-image" src="images/mainimage.JPG" alt="Main Page Portrait">
+            <p class="intro-p"><span id="welcomep">
+                Welcome to my Portfolio Website! My name is Sahil Patel and I am currently a 4th year 
+                Computer Engineering student at McMaster Unviersity. I absolutely love technology, and all thing computers, 
+                whether that be hardware or software. I have past internship experiance as a hardware engineer, but moving 
+                forward I want to explore more software related positions, perhaps in embbedded systems. When I am not tinkering 
+                with computers, you can find me enjoying my hobbies which include many sports, music, <a id="hidden-link" href="snake.html">videogames</a> and fashion.
+                On this website you can learn all bout my projects, hobbies and interests by flipping over the tabs above!
+                If you wish to get in touch with me, visit the contact tab!
+            </span></p>
+        </div>
+        
+        <script>
+            $(document).ready(function() {
+              $('.animsition').animsition();
+            });
+        </script>
+
+    </body>
+</html>
